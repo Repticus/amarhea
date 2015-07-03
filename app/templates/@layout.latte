@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="cs">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>{include title|striptags|strip}</title>
+		<link rel="stylesheet" href="{$basePath}/style.css">
+		<link rel="shortcut icon" href="{$basePath}/favicon.ico">
+	</head>
+
+	<body>
+		<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+
+		{block content|indent:2}
+		{/block}
+
+		{block scripts}
+		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="//nette.github.io/resources/js/netteForms.min.js"></script>
+		<script src="{$basePath}/javascript.js"></script>
+		{/block}
+	</body>
+</html>
