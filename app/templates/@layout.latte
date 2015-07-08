@@ -10,14 +10,26 @@
 
 	<body>
 		<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
-
-		{block content|indent:2}
-		{/block}
-
-		{block scripts}
-		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-		<script src="//nette.github.io/resources/js/netteForms.min.js"></script>
+		<div id="page">
+			{*
+			<ul id="menu">
+				<li>menu1</li>
+				<li>menu2</li>
+				<li>menu3</li>
+				<li>menu4</li>
+				<li>menu5</li>
+			</ul>
+			*}
+			<div class="clr">.</div>
+			<div id="content">
+				{block content|indent:2}
+				{/block}
+			</div>
+		</div>
+		{*block scripts}
+				<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+				<script src="//nette.github.io/resources/js/netteForms.min.js"></script>
 		<script src="{$basePath}/javascript.js"></script>
-		{/block}
+		{/block*}
 	</body>
 </html>

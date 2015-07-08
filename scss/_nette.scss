@@ -1,0 +1,20 @@
+a[href^="error:"] {
+    background: red;
+    color: white;
+}
+.flash {
+	padding: 8px;
+	margin-bottom: 2px;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+.flash.success {
+	background: #E6EFC2;
+	color: #264409;
+	border-color: #C6D880;
+}
+.flash.error {
+	background: #FFB6C1;
+	color: #8a1f11;
+	border-color: #8a1f11;
+}
