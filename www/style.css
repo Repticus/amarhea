@@ -10,25 +10,101 @@ h1 {
   font-size: 22px;
 }
 
-#menu {
-  width: 600px;
-  margin: 0 auto;
-  position: absolute;
+a {
+  color: #3b5bd0;
 }
 
 #content {
   width: 520px;
-  margin: 240px auto;
+  margin: 220px auto;
+  padding-bottom: 390px;
 }
 
 #page {
   min-height: 1192px;
-  /*padding-top: 300px;*/
   background: url("img/head.jpg") top no-repeat, url("img/foot.jpg") bottom no-repeat, url("img/body.jpg") center 585px repeat-y, url("img/btmgrad.jpg") bottom repeat-x, url("img/topgrad.jpg") top repeat-x #e3cf9a;
+}
+
+.floatleft {
+  float: left;
+  margin-right: 5px;
 }
 
 .clr {
   clear: both;
+}
+
+#menu {
+  width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  font-size: 1.2em;
+  font-family: arial;
+}
+#menu a {
+  color: #490c58;
+  text-decoration: none;
+}
+#menu li {
+  position: absolute;
+}
+#menu li:nth-child(1) {
+  top: 130px;
+  left: 30px;
+}
+#menu li:nth-child(1) a.active,
+#menu li:nth-child(1) a:hover {
+  color: #e32222;
+}
+#menu li:nth-child(2) {
+  top: 76px;
+  left: 150px;
+}
+#menu li:nth-child(2) a.active,
+#menu li:nth-child(2) a:hover {
+  color: #e5357b;
+}
+#menu li:nth-child(3) {
+  top: 26px;
+  left: 240px;
+}
+#menu li:nth-child(3) a.active,
+#menu li:nth-child(3) a:hover {
+  color: #3b5bd0;
+}
+#menu li:nth-child(4) {
+  top: 130px;
+  left: 240px;
+}
+#menu li:nth-child(4) a.active,
+#menu li:nth-child(4) a:hover {
+  color: #3ac7b5;
+}
+#menu li:nth-child(5) {
+  top: 26px;
+  left: 30px;
+}
+#menu li:nth-child(5) a.active,
+#menu li:nth-child(5) a:hover {
+  color: #d03b42;
+}
+#menu li:nth-child(6) {
+  top: 76px;
+  left: 320px;
+}
+#menu li:nth-child(6) a.active,
+#menu li:nth-child(6) a:hover {
+  color: #c138de;
+}
+#menu li:nth-child(7) {
+  top: 130px;
+  left: 420px;
+}
+#menu li:nth-child(7) a.active,
+#menu li:nth-child(7) a:hover {
+  color: #24bf3a;
 }
 
 a[href^="error:"] {

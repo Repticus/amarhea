@@ -11,15 +11,15 @@
 	<body>
 		<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
 		<div id="page">
-			{*
 			<ul id="menu">
-				<li>menu1</li>
-				<li>menu2</li>
-				<li>menu3</li>
-				<li>menu4</li>
-				<li>menu5</li>
+				<li><a n:class="$presenter->isLinkCurrent('kurzySeminare') ? active" n:href="Web:kurzySeminare">Kurzy a semináře</a></li>
+				<li><a n:class="$presenter->isLinkCurrent('tanecniKurzy') ? active" n:href="Web:tanecniKurzy">Taneční kurzy</a></li>
+				<li><a n:class="$presenter->isLinkCurrent('prostorProDusi') ? active" n:href="Web:prostorProDusi">Prostor pro duši</a></li>
+				<li><a n:class="$presenter->isLinkCurrent('bytSamSebou') ? active" n:href="Web:bytSamSebou">Být sám sebou</a></li>
+				<li><a n:class="$presenter->isLinkCurrent('hvezdyVypravi') ? active" n:href="Web:hvezdyVypravi">Hvězdy vypráví</a></li>
+				<li><a n:class="$presenter->isLinkCurrent('kouzelneAmulety') ? active" n:href="Web:kouzelneAmulety">Kouzelné amulety</a></li>
+				<li><a n:class="$presenter->isLinkCurrent('kontakt') ? active" n:href="Web:kontakt">Kontakt</a></li>
 			</ul>
-			*}
 			<div class="clr">.</div>
 			<div id="content">
 				{block content|indent:2}
