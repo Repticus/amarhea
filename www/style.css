@@ -1,3 +1,8 @@
+@font-face {
+  font-family: webglyphs;
+  src: url("font/webglyphs.eot");
+  src: url("font/webglyphs.woff") format("woff"), url("font/webglyphs.ttf") format("truetype");
+}
 body {
   padding: 0;
   margin: 0;
@@ -105,6 +110,39 @@ a {
 #menu li:nth-child(7) a.active,
 #menu li:nth-child(7) a:hover {
   color: #24bf3a;
+}
+
+#contact {
+  list-style: none;
+  padding: 0;
+}
+
+#contact li {
+  margin-top: 4px;
+}
+
+#contact li:before {
+  color: #999999;
+  position: relative;
+  font-family: webglyphs;
+  font-weight: normal;
+  margin-right: 8px;
+  cursor: default;
+}
+
+.person:before {
+  content: '\f040';
+  top: 2px;
+}
+
+.mail:before {
+  content: '\f028';
+  top: 3px;
+}
+
+.phone:before {
+  content: '\f0e8';
+  top: 1px;
 }
 
 a[href^="error:"] {

@@ -1,0 +1,29 @@
+$iconColor: #999999;
+
+#contact{
+	list-style: none;
+	padding: 0;
+}
+#contact li{
+	margin-top: 4px;
+}
+#contact li:before{
+	color: $iconColor;
+	position: relative;
+	font-family: webglyphs;
+	font-weight: normal;
+	margin-right: 8px;
+	cursor: default;
+}
+.person:before {
+	content: '\f040';
+	top:2px;
+}
+.mail:before {
+	content: '\f028';
+	top:3px;
+}
+.phone:before {
+	content: '\f0e8';
+	top:1px;
+}

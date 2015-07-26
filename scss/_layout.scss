@@ -3,6 +3,13 @@ $linkColor: #3b5bd0;
 $backColor: #cfad53;
 $bodyColor: #e3cf9a;
 
+@font-face {
+	font-family: webglyphs;
+	src: url('font/webglyphs.eot');
+	src: url('font/webglyphs.woff') format('woff'),
+		url('font/webglyphs.ttf') format('truetype');
+}
+
 body{
 	padding: 0;
 	margin: 0;
