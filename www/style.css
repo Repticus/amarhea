@@ -3,15 +3,20 @@
   src: url("font/webglyphs.eot");
   src: url("font/webglyphs.woff") format("woff"), url("font/webglyphs.ttf") format("truetype");
 }
+@font-face {
+  font-family: allura;
+  src: url("font/allura.eot");
+  src: url("font/allura.svg#allura") format("svg"), url("font/allura.woff") format("woff"), url("font/allura.ttf") format("truetype");
+}
 body {
   padding: 0;
   margin: 0;
-  color: #3d3d3d;
+  color: #46562c;
   background-color: #cfad53;
 }
 
 h1 {
-  margin: 0;
+  margin-left: 100px;
   font-size: 22px;
 }
 
@@ -45,71 +50,50 @@ a {
   padding: 0;
   list-style: none;
   position: relative;
-  font-size: 1.2em;
-  font-family: arial;
-}
-#menu a {
-  color: #490c58;
-  text-decoration: none;
+  font-family: allura;
+  font-size: 2em;
+  text-shadow: 0 0 3px #404b2e;
 }
 #menu li {
   position: absolute;
 }
-#menu li:nth-child(1) {
-  top: 130px;
-  left: 30px;
+#menu a {
+  color: #6f309f;
+  text-shadow: 0 0 3px #3d105f;
+  text-decoration: none;
 }
-#menu li:nth-child(1) a.active,
-#menu li:nth-child(1) a:hover {
-  color: #e32222;
+#menu a.active,
+#menu a:hover {
+  color: #c00000;
+  text-shadow: 0 0 2px #900000;
+}
+#menu li:nth-child(1) {
+  top: 30px;
+  left: 76px;
 }
 #menu li:nth-child(2) {
-  top: 76px;
-  left: 150px;
-}
-#menu li:nth-child(2) a.active,
-#menu li:nth-child(2) a:hover {
-  color: #e5357b;
+  top: 30px;
+  left: 314px;
 }
 #menu li:nth-child(3) {
-  top: 26px;
-  left: 240px;
-}
-#menu li:nth-child(3) a.active,
-#menu li:nth-child(3) a:hover {
-  color: #3b5bd0;
+  top: 85px;
+  left: 60px;
 }
 #menu li:nth-child(4) {
-  top: 130px;
-  left: 240px;
-}
-#menu li:nth-child(4) a.active,
-#menu li:nth-child(4) a:hover {
-  color: #3ac7b5;
+  top: 85px;
+  left: 265px;
 }
 #menu li:nth-child(5) {
-  top: 26px;
-  left: 30px;
-}
-#menu li:nth-child(5) a.active,
-#menu li:nth-child(5) a:hover {
-  color: #d03b42;
+  top: 85px;
+  left: 364px;
 }
 #menu li:nth-child(6) {
-  top: 76px;
-  left: 320px;
-}
-#menu li:nth-child(6) a.active,
-#menu li:nth-child(6) a:hover {
-  color: #c138de;
+  top: 140px;
+  left: 50px;
 }
 #menu li:nth-child(7) {
-  top: 130px;
-  left: 420px;
-}
-#menu li:nth-child(7) a.active,
-#menu li:nth-child(7) a:hover {
-  color: #24bf3a;
+  top: 140px;
+  left: 460px;
 }
 
 #contact {

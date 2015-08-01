@@ -1,74 +1,51 @@
-$menuColor: #490c58;
-
 #menu{
 	width: 600px;
 	margin: 0 auto;
 	padding: 0;
 	list-style: none;
 	position: relative;
-	font-size: 1.2em;
-	font-family: arial;
-	a{
-		color: $menuColor;
-		text-decoration: none;
-	}
+	font-family: allura;
+	font-size: 2em;
+	text-shadow: 0 0 3px #404b2e;
 	li{
 		position: absolute;
 	}
-	li:nth-child(1){
-		top: 130px;
-		left: 30px;
+	a{
+		color: #6f309f;
+		text-shadow: 0 0 3px #3d105f;
+		text-decoration: none;
+	}
 		a.active,
 		a:hover{
-			color: #e32222;
+			color: #c00000;
+			text-shadow: 0 0 2px #900000;
 		}
+	li:nth-child(1){
+		top: 30px;
+		left: 76px;
 	}
 	li:nth-child(2){
-		top: 76px;
-		left: 150px;
-		a.active,
-		a:hover{
-			color: #e5357b;
-		}
+		top: 30px;
+		left: 314px;
 	}
 	li:nth-child(3){
-		top: 26px;
-		left: 240px;
-		a.active,
-		a:hover{
-			color: #3b5bd0;
-		}
+		top: 85px;
+		left: 60px;
 	}
 	li:nth-child(4){
-		top: 130px;
-		left: 240px;
-		a.active,
-		a:hover{
-			color: #3ac7b5;
-		}
+		top: 85px;
+		left: 265px;
 	}
 	li:nth-child(5){
-		top: 26px;
-		left: 30px;
-		a.active,
-		a:hover{
-			color: #d03b42;
-		}
+		top: 85px;
+		left: 364px;
 	}
 	li:nth-child(6){
-		top: 76px;
-		left: 320px;
-		a.active,
-		a:hover{
-			color: #c138de;
-		}
+		top: 140px;
+		left: 50px;
 	}
 	li:nth-child(7){
-		top: 130px;
-		left: 420px;
-		a.active,
-		a:hover{
-			color: #24bf3a;
-		}
+		top: 140px;
+		left: 460px;
 	}
 }
