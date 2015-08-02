@@ -13,11 +13,13 @@ body {
   margin: 0;
   color: #46562c;
   background-color: #cfad53;
+  font-family: 'Exo 2';
 }
 
-h1 {
-  margin-left: 100px;
-  font-size: 22px;
+h1, h2 {
+  margin-left: 60px;
+  font-family: 'allura';
+  font-size: 1.8em;
 }
 
 a {
@@ -65,15 +67,27 @@ a {
 #menu a.active,
 #menu a:hover {
   color: #c00000;
+  color: #ed1b1b;
+  color: #bf272b;
   text-shadow: 0 0 2px #900000;
 }
 #menu li:nth-child(1) {
   top: 30px;
   left: 76px;
 }
+#menu li:nth-child(1) a.active,
+#menu li:nth-child(1) a:hover {
+  color: #088e3b;
+  text-shadow: 0 0 2px #006316;
+}
 #menu li:nth-child(2) {
   top: 30px;
   left: 314px;
+}
+#menu li:nth-child(2) a.active,
+#menu li:nth-child(2) a:hover {
+  color: #088e3b;
+  text-shadow: 0 0 2px #006316;
 }
 #menu li:nth-child(3) {
   top: 85px;
@@ -83,6 +97,11 @@ a {
   top: 85px;
   left: 265px;
 }
+#menu li:nth-child(4) a.active,
+#menu li:nth-child(4) a:hover {
+  color: #088e3b;
+  text-shadow: 0 0 2px #006316;
+}
 #menu li:nth-child(5) {
   top: 85px;
   left: 364px;
@@ -91,6 +110,11 @@ a {
   top: 140px;
   left: 50px;
 }
+#menu li:nth-child(6) a.active,
+#menu li:nth-child(6) a:hover {
+  color: #088e3b;
+  text-shadow: 0 0 2px #006316;
+}
 #menu li:nth-child(7) {
   top: 140px;
   left: 235px;
@@ -98,6 +122,11 @@ a {
 #menu li:nth-child(8) {
   top: 140px;
   left: 460px;
+}
+#menu li:nth-child(8) a.active,
+#menu li:nth-child(8) a:hover {
+  color: #088e3b;
+  text-shadow: 0 0 2px #006316;
 }
 
 #contact {

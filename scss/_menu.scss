@@ -15,18 +15,30 @@
 		text-shadow: 0 0 3px #3d105f;
 		text-decoration: none;
 	}
-		a.active,
-		a:hover{
-			color: #c00000;
-			text-shadow: 0 0 2px #900000;
-		}
+	a.active,
+	a:hover{
+		color: #c00000;
+		color: #ed1b1b;
+		color: #bf272b;
+		text-shadow: 0 0 2px #900000;
+	}
 	li:nth-child(1){
 		top: 30px;
 		left: 76px;
+		a.active,
+		a:hover{
+			color: #088e3b;
+			text-shadow: 0 0 2px #006316;
+		}
 	}
 	li:nth-child(2){
 		top: 30px;
 		left: 314px;
+		a.active,
+		a:hover{
+			color: #088e3b;
+			text-shadow: 0 0 2px #006316;
+		}
 	}
 	li:nth-child(3){
 		top: 85px;
@@ -35,6 +47,11 @@
 	li:nth-child(4){
 		top: 85px;
 		left: 265px;
+		a.active,
+		a:hover{
+			color: #088e3b;
+			text-shadow: 0 0 2px #006316;
+		}
 	}
 	li:nth-child(5){
 		top: 85px;
@@ -43,6 +60,11 @@
 	li:nth-child(6){
 		top: 140px;
 		left: 50px;
+		a.active,
+		a:hover{
+			color: #088e3b;
+			text-shadow: 0 0 2px #006316;
+		}
 	}
 	li:nth-child(7){
 		top: 140px;
@@ -51,5 +73,10 @@
 	li:nth-child(8){
 		top: 140px;
 		left: 460px;
+		a.active,
+		a:hover{
+			color: #088e3b;
+			text-shadow: 0 0 2px #006316;
+		}
 	}
 }
