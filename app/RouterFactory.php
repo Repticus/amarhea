@@ -13,7 +13,7 @@ class RouterFactory {
 	 */
 	public static function createRouter() {
 		$router = new RouteList();
-		$router[] = new Route('[<action>]', 'Web:kurzy');
+		$router[] = new Route('[<action>]', 'Web:amarhea');
 		return $router;
 	}
 

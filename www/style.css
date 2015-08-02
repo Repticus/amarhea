@@ -93,6 +93,10 @@ a {
 }
 #menu li:nth-child(7) {
   top: 140px;
+  left: 235px;
+}
+#menu li:nth-child(8) {
+  top: 140px;
   left: 460px;
 }
 
