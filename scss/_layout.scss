@@ -24,9 +24,10 @@ body{
 	font-family: 'Exo 2';
 }
 h1, h2{
-	margin-left: 60px;
+	padding-left: 60px;
 	font-family: 'allura';
 	font-size: 1.8em;
+	background:	url('img/leaf.png') 8px -3px no-repeat;
 }
 a{
 	color: $linkColor;
