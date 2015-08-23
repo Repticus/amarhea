@@ -1,0 +1,38 @@
+parameters:
+	amulets:
+		-
+			name: 'Obrazy na plátně' #nazev galerie - text s diakritikou
+			dir: 'obrazy' #nazev slozky kde se nachazeji obrazky pro tuto galerii - text bez diakritiky - mala pismena
+		-
+			name: 'Keramické sošky'
+			dir: 'sosky'
+		-
+			name: 'Bubny z jelena'
+			dir: 'bubny'
+		-
+			name: 'Mošničky a váčky z kůže'
+			dir: 'mosny'
+		-
+			name: 'Dárkové krabičky na náramky'
+			dir: 'krabicky'
+		-
+			name: 'Medicínská zvířátka'
+			dir: 'zviratka'
+		-
+			name: 'Kouzelné víly, skřítci, andílci'
+			dir: 'privesky'
+		-
+			name: 'Kouzelné ketlované náramky'
+			dir: 'naramky'
+		-
+			name: 'Kouzelné náušnice'
+			dir: 'nausnice'
+		-
+			name: 'Kouzelné náhrdelníky'
+			dir: 'nahrdelniky'
+		-
+			name: 'Kouzelné sety'
+			dir: 'sety'
+		-
+			name: 'Ketlované růžence'
+			dir: 'ruzence'

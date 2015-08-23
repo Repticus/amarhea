@@ -1,8 +1,11 @@
+includes:
+	- 'amulets.neon'
+
 parameters:
 
 php:
 	date.timezone: Europe/Prague
-
+	exif.encode_unicode: UTF-8
 application:
 	errorPresenter: Error
 	mapping:

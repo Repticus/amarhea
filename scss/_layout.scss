@@ -12,8 +12,7 @@ $bodyColor: #e3cf9a;
 @font-face {
 	font-family: allura;
 	src: url('font/allura.eot');
-	src: url('font/allura.svg#allura') format('svg'),
-		url('font/allura.woff') format('woff'),
+	src: url('font/allura.woff') format('woff'),
 		url('font/allura.ttf') format('truetype');
 }
 body{
@@ -28,6 +27,10 @@ h1, h2{
 	font-family: 'allura';
 	font-size: 1.8em;
 	background:	url('img/leaf.png') 8px -3px no-repeat;
+	margin: 28px 0 10px 0;
+}
+p{
+	margin: 10px 0 10px 0;
 }
 a{
 	color: $linkColor;
