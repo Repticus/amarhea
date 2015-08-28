@@ -2,10 +2,13 @@ includes:
 	- 'amulets.neon'
 
 parameters:
+	setlocale: cs_CZ.UTF-8
+#	setlocale: czech
 
 php:
 	date.timezone: Europe/Prague
 	exif.encode_unicode: UTF-8
+
 application:
 	errorPresenter: Error
 	mapping:
