@@ -1,5 +1,6 @@
 includes:
 	- 'amulets.neon'
+	- 'galerie.neon'
 
 parameters:
 	setlocale: cs_CZ.UTF-8

@@ -34,3 +34,18 @@
 		{*		<script src="//nette.github.io/resources/js/netteForms.min.js"></script>*}
 	</body>
 </html>
+
+{define gallery}
+{foreach $gallery as $section}
+	<h2>{$section['name']}</h2>
+	{ifset $section['dir']}
+		{var $images = $presenter->getImages($dir, $section['dir'])}
+		<div class="gallery">
+			<a n:foreach="$images as $image" href="{$image['path']}" rel="g[{$section['dir']}]">
+				<img src="{$image['path']}" alt="{$image['title']}"{ifset $image['title']} title="{$image['title']}"{/ifset} />
+			</a>
+		</div>
+		<div class="clr"></div>
+	{/ifset}
+{/foreach}
+{/define}

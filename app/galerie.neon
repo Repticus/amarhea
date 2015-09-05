@@ -1,0 +1,23 @@
+parameters:
+	galerie:
+		-
+			name: 'Průřez Gala večery absolventek mých kurzů' #nazev galerie - text s diakritikou
+			dir: 'absolventky' #nazev slozky kde se nachazeji obrazky pro tuto galerii - text bez diakritiky - mala pismena
+		-
+			name: 'Z víkendových akcí nejen pro ženy'
+			dir: 'akce'
+		-
+			name: 'Z pravidelných hodin tance'
+			dir: 'tanec'
+		-
+			name: 'Pobyt s tancem v Turecku'
+			dir: 'turecko'
+		-
+			name: 'Pobyty s tancem v Lanterně'
+			dir: 'lanterna'
+		-
+			name: 'Krásy z přírody'
+			dir: 'priroda'
+		-
+			name: 'Gala večery - další fotky'
+			dir: 'galavecery'

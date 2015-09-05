@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
 	$(".gallery a").prettyPhoto({
 		animation_speed: 'fast',
 		slideshow: 3000,
@@ -10,7 +10,7 @@ $(function() {
 	});
 });
 //pretty foto
-(function(e) {
+(function (e) {
 	function t() {
 		var e = location.href;
 		hashtag = e.indexOf("#prettyPhoto") !== -1 ? decodeURI(e.substring(e.indexOf("#prettyPhoto") + 1, e.length)) : false;
@@ -33,7 +33,7 @@ $(function() {
 		return i == null ? "" : i[1]
 	}
 	e.prettyPhoto = {version: "3.1.5"};
-	e.fn.prettyPhoto = function(s) {
+	e.fn.prettyPhoto = function (s) {
 		function g() {
 			e(".pp_loaderIcon").hide();
 			projectedTop = scroll_pos["scrollTop"] + (d / 2 - a["containerHeight"] / 2);
@@ -41,7 +41,7 @@ $(function() {
 				projectedTop = 0;
 			$ppt.fadeTo(settings.animation_speed, 1);
 			$pp_pic_holder.find(".pp_content").animate({height: a["contentHeight"], width: a["contentWidth"]}, settings.animation_speed);
-			$pp_pic_holder.animate({top: projectedTop, left: v / 2 - a["containerWidth"] / 2 < 0 ? 0 : v / 2 - a["containerWidth"] / 2, width: a["containerWidth"]}, settings.animation_speed, function() {
+			$pp_pic_holder.animate({top: projectedTop, left: v / 2 - a["containerWidth"] / 2 < 0 ? 0 : v / 2 - a["containerWidth"] / 2, width: a["containerWidth"]}, settings.animation_speed, function () {
 				$pp_pic_holder.find(".pp_hoverContainer,#fullResImage").height(a["height"]).width(a["width"]);
 				$pp_pic_holder.find(".pp_fade").fadeIn(settings.animation_speed);
 				if (isSet && S(pp_images[set_position]) == "image") {
@@ -66,7 +66,7 @@ $(function() {
 		}
 		function y(t) {
 			$pp_pic_holder.find("#pp_full_res object,#pp_full_res embed").css("visibility", "hidden");
-			$pp_pic_holder.find(".pp_fade").fadeOut(settings.animation_speed, function() {
+			$pp_pic_holder.find(".pp_fade").fadeOut(settings.animation_speed, function () {
 				e(".pp_loaderIcon").show();
 				t()
 			})
@@ -212,24 +212,24 @@ $(function() {
 				toInject = settings.gallery_markup.replace(/{gallery}/g, toInject);
 				$pp_pic_holder.find("#pp_full_res").after(toInject);
 				$pp_gallery = e(".pp_pic_holder .pp_gallery"), $pp_gallery_li = $pp_gallery.find("li");
-				$pp_gallery.find(".pp_arrow_next").click(function() {
+				$pp_gallery.find(".pp_arrow_next").click(function () {
 					e.prettyPhoto.changeGalleryPage("next");
 					e.prettyPhoto.stopSlideshow();
 					return false
 				});
-				$pp_gallery.find(".pp_arrow_previous").click(function() {
+				$pp_gallery.find(".pp_arrow_previous").click(function () {
 					e.prettyPhoto.changeGalleryPage("previous");
 					e.prettyPhoto.stopSlideshow();
 					return false
 				});
-				$pp_pic_holder.find(".pp_content").hover(function() {
+				$pp_pic_holder.find(".pp_content").hover(function () {
 					$pp_pic_holder.find(".pp_gallery:not(.disabled)").fadeIn()
-				}, function() {
+				}, function () {
 					$pp_pic_holder.find(".pp_gallery:not(.disabled)").fadeOut()
 				});
 				itemWidth = 52 + 5;
-				$pp_gallery_li.each(function(t) {
-					e(this).find("a").click(function() {
+				$pp_gallery_li.each(function (t) {
+					e(this).find("a").click(function () {
 						e.prettyPhoto.changePage(t);
 						e.prettyPhoto.stopSlideshow();
 						return false
@@ -238,22 +238,22 @@ $(function() {
 			}
 			if (settings.slideshow) {
 				$pp_pic_holder.find(".pp_nav").prepend('<a href="#" class="pp_play">Play</a>');
-				$pp_pic_holder.find(".pp_nav .pp_play").click(function() {
+				$pp_pic_holder.find(".pp_nav .pp_play").click(function () {
 					e.prettyPhoto.startSlideshow();
 					return false
 				})
 			}
 			$pp_pic_holder.attr("class", "pp_pic_holder " + settings.theme);
-			$pp_overlay.css({opacity: 0, height: e(document).height(), width: e(window).width()}).bind("click", function() {
+			$pp_overlay.css({opacity: 0, height: e(document).height(), width: e(window).width()}).bind("click", function () {
 				if (!settings.modal)
 					e.prettyPhoto.close()
 			});
-			e("a.pp_close").bind("click", function() {
+			e("a.pp_close").bind("click", function () {
 				e.prettyPhoto.close();
 				return false
 			});
 			if (settings.allow_expand) {
-				e("a.pp_expand").bind("click", function(t) {
+				e("a.pp_expand").bind("click", function (t) {
 					if (e(this).hasClass("pp_expand")) {
 						e(this).removeClass("pp_expand").addClass("pp_contract");
 						doresize = false
@@ -261,36 +261,36 @@ $(function() {
 						e(this).removeClass("pp_contract").addClass("pp_expand");
 						doresize = true
 					}
-					y(function() {
+					y(function () {
 						e.prettyPhoto.open()
 					});
 					return false
 				})
 			}
-			$pp_pic_holder.find(".pp_previous, .pp_nav .pp_arrow_previous").bind("click", function() {
+			$pp_pic_holder.find(".pp_previous, .pp_nav .pp_arrow_previous").bind("click", function () {
 				e.prettyPhoto.changePage("previous");
 				e.prettyPhoto.stopSlideshow();
 				return false
 			});
-			$pp_pic_holder.find(".pp_next, .pp_nav .pp_arrow_next").bind("click", function() {
+			$pp_pic_holder.find(".pp_next, .pp_nav .pp_arrow_next").bind("click", function () {
 				e.prettyPhoto.changePage("next");
 				e.prettyPhoto.stopSlideshow();
 				return false
 			});
 			x()
 		}
-		s = jQuery.extend({hook: "rel", animation_speed: "fast", ajaxcallback: function() {
-			}, slideshow: 5e3, autoplay_slideshow: false, opacity: .8, show_title: true, allow_resize: true, allow_expand: true, default_width: 500, default_height: 344, counter_separator_label: "/", theme: "pp_default", horizontal_padding: 20, hideflash: false, wmode: "opaque", autoplay: true, modal: false, deeplinking: true, overlay_gallery: true, overlay_gallery_max: 30, keyboard_shortcuts: true, changepicturecallback: function() {
-			}, callback: function() {
+		s = jQuery.extend({hook: "rel", animation_speed: "fast", ajaxcallback: function () {
+			}, slideshow: 5e3, autoplay_slideshow: false, opacity: .8, show_title: true, allow_resize: true, allow_expand: true, default_width: 500, default_height: 344, counter_separator_label: "/", theme: "pp_default", horizontal_padding: 20, hideflash: false, wmode: "opaque", autoplay: true, modal: false, deeplinking: true, overlay_gallery: true, overlay_gallery_max: 30, keyboard_shortcuts: true, changepicturecallback: function () {
+			}, callback: function () {
 			}, ie6_fallback: true, markup: '<div class="pp_pic_holder"> 						<div class="ppt"> </div> 						<div class="pp_top"> 							<div class="pp_left"></div> 							<div class="pp_middle"></div> 							<div class="pp_right"></div> 						</div> 						<div class="pp_content_container"> 							<div class="pp_left"> 							<div class="pp_right"> 								<div class="pp_content"> 									<div class="pp_loaderIcon"></div> 									<div class="pp_fade"> 										<a href="#" class="pp_expand" title="Expand the image">Expand</a> 										<div class="pp_hoverContainer"> 											<a class="pp_next" href="#">next</a> 											<a class="pp_previous" href="#">previous</a> 										</div> 										<div id="pp_full_res"></div> 										<div class="pp_details"> 											<div class="pp_nav"> 												<a href="#" class="pp_arrow_previous">Previous</a> 												<p class="currentTextHolder">0/0</p> 												<a href="#" class="pp_arrow_next">Next</a> 											</div> 											<p class="pp_description"></p> 											<div class="pp_social">{pp_social}</div> 											<a class="pp_close" href="#">Close</a> 										</div> 									</div> 								</div> 							</div> 							</div> 						</div> 						<div class="pp_bottom"> 							<div class="pp_left"></div> 							<div class="pp_middle"></div> 							<div class="pp_right"></div> 						</div> 					</div> 					<div class="pp_overlay"></div>', gallery_markup: '<div class="pp_gallery"> 								<a href="#" class="pp_arrow_previous">Previous</a> 								<div> 									<ul> 										{gallery} 									</ul> 								</div> 								<a href="#" class="pp_arrow_next">Next</a> 							</div>', image_markup: '<img id="fullResImage" src="{path}" />', flash_markup: '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="{width}" height="{height}"><param name="wmode" value="{wmode}" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="{path}" /><embed src="{path}" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="{width}" height="{height}" wmode="{wmode}"></embed></object>', quicktime_markup: '<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab" height="{height}" width="{width}"><param name="src" value="{path}"><param name="autoplay" value="{autoplay}"><param name="type" value="video/quicktime"><embed src="{path}" height="{height}" width="{width}" autoplay="{autoplay}" type="video/quicktime" pluginspage="http://www.apple.com/quicktime/download/"></embed></object>', iframe_markup: '<iframe src ="{path}" width="{width}" height="{height}" frameborder="no"></iframe>', inline_markup: '<div class="pp_inline">{content}</div>', custom_markup: "", social_tools: '<div class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div><div class="facebook"><iframe src="//www.facebook.com/plugins/like.php?locale=en_US&href={location_href}&layout=button_count&show_faces=true&width=500&action=like&font&colorscheme=light&height=23" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:500px; height:23px;" allowTransparency="true"></iframe></div>'}, s);
 		var o = this, u = false, a, f, l, c, h, p, d = e(window).height(), v = e(window).width(), m;
 		doresize = true, scroll_pos = T();
-		e(window).unbind("resize.prettyphoto").bind("resize.prettyphoto", function() {
+		e(window).unbind("resize.prettyphoto").bind("resize.prettyphoto", function () {
 			x();
 			N()
 		});
 		if (s.keyboard_shortcuts) {
-			e(document).unbind("keydown.prettyphoto").bind("keydown.prettyphoto", function(t) {
+			e(document).unbind("keydown.prettyphoto").bind("keydown.prettyphoto", function (t) {
 				if (typeof $pp_pic_holder != "undefined") {
 					if ($pp_pic_holder.is(":visible")) {
 						switch (t.keyCode) {
@@ -312,22 +312,22 @@ $(function() {
 				}
 			})
 		}
-		e.prettyPhoto.initialize = function() {
+		e.prettyPhoto.initialize = function () {
 			settings = s;
 			if (settings.theme == "pp_default")
 				settings.horizontal_padding = 16;
 			theRel = e(this).attr(settings.hook);
 			galleryRegExp = /\[(?:.*)\]/;
 			isSet = galleryRegExp.exec(theRel) ? true : false;
-			pp_images = isSet ? jQuery.map(o, function(t, n) {
+			pp_images = isSet ? jQuery.map(o, function (t, n) {
 				if (e(t).attr(settings.hook).indexOf(theRel) != -1)
 					return e(t).attr("href")
 			}) : e.makeArray(e(this).attr("href"));
-			pp_titles = isSet ? jQuery.map(o, function(t, n) {
+			pp_titles = isSet ? jQuery.map(o, function (t, n) {
 				if (e(t).attr(settings.hook).indexOf(theRel) != -1)
 					return e(t).find("img").attr("alt") ? e(t).find("img").attr("alt") : ""
 			}) : e.makeArray(e(this).find("img").attr("alt"));
-			pp_descriptions = isSet ? jQuery.map(o, function(t, n) {
+			pp_descriptions = isSet ? jQuery.map(o, function (t, n) {
 				if (e(t).attr(settings.hook).indexOf(theRel) != -1)
 					return e(t).attr("title") ? e(t).attr("title") : ""
 			}) : e.makeArray(e(this).attr("title"));
@@ -337,14 +337,14 @@ $(function() {
 			rel_index = isSet ? set_position : e("a[" + settings.hook + "^='" + theRel + "']").index(e(this));
 			k(this);
 			if (settings.allow_resize)
-				e(window).bind("scroll.prettyphoto", function() {
+				e(window).bind("scroll.prettyphoto", function () {
 					x()
 				});
 			e.prettyPhoto.open();
 			return false
 		};
-		e.prettyPhoto.open = function(t) {
-			$("body").keypress(function(t) {
+		e.prettyPhoto.open = function (t) {
+			$("body").keypress(function (t) {
 				switch (t.keyCode) {
 					case 13:
 						t.preventDefault();
@@ -390,7 +390,7 @@ $(function() {
 				movie_width = parseFloat(e(window).width() * parseFloat(movie_width) / 100 - 150);
 				u = true
 			}
-			$pp_pic_holder.fadeIn(function() {
+			$pp_pic_holder.fadeIn(function () {
 				settings.show_title && pp_titles[set_position] != "" && typeof pp_titles[set_position] != "undefined" ? $ppt.html(unescape(pp_titles[set_position])) : $ppt.html(" ");
 				imgPreloader = "";
 				skipInjection = false;
@@ -404,11 +404,11 @@ $(function() {
 						if (isSet && pp_images[set_position - 1])
 							prevImage.src = pp_images[set_position - 1];
 						$pp_pic_holder.find("#pp_full_res")[0].innerHTML = settings.image_markup.replace(/{path}/g, pp_images[set_position]);
-						imgPreloader.onload = function() {
+						imgPreloader.onload = function () {
 							a = w(imgPreloader.width, imgPreloader.height);
 							g()
 						};
-						imgPreloader.onerror = function() {
+						imgPreloader.onerror = function () {
 							alert("Image cannot be loaded. Make sure the path is correct and image exist.");
 							e.prettyPhoto.close()
 						};
@@ -468,7 +468,7 @@ $(function() {
 						a = w(movie_width, movie_height);
 						doresize = true;
 						skipInjection = true;
-						e.get(pp_images[set_position], function(e) {
+						e.get(pp_images[set_position], function (e) {
 							toInject = settings.inline_markup.replace(/{content}/g, e);
 							$pp_pic_holder.find("#pp_full_res")[0].innerHTML = toInject;
 							g()
@@ -494,7 +494,7 @@ $(function() {
 			});
 			return false
 		};
-		e.prettyPhoto.changePage = function(t) {
+		e.prettyPhoto.changePage = function (t) {
 			currentGalleryPage = 0;
 			if (t == "previous") {
 				set_position--;
@@ -513,11 +513,11 @@ $(function() {
 			if (settings.allow_expand) {
 				e(".pp_contract").removeClass("pp_contract").addClass("pp_expand")
 			}
-			y(function() {
+			y(function () {
 				e.prettyPhoto.open()
 			})
 		};
-		e.prettyPhoto.changeGalleryPage = function(e) {
+		e.prettyPhoto.changeGalleryPage = function (e) {
 			if (e == "next") {
 				currentGalleryPage++;
 				if (currentGalleryPage > totalPage)
@@ -533,9 +533,9 @@ $(function() {
 			slide_to = currentGalleryPage * itemsPerPage * itemWidth;
 			$pp_gallery.find("ul").animate({left: -slide_to}, slide_speed)
 		};
-		e.prettyPhoto.startSlideshow = function() {
+		e.prettyPhoto.startSlideshow = function () {
 			if (typeof m == "undefined") {
-				$pp_pic_holder.find(".pp_play").unbind("click").removeClass("pp_play").addClass("pp_pause").click(function() {
+				$pp_pic_holder.find(".pp_play").unbind("click").removeClass("pp_play").addClass("pp_pause").click(function () {
 					e.prettyPhoto.stopSlideshow();
 					return false
 				});
@@ -544,24 +544,24 @@ $(function() {
 				e.prettyPhoto.changePage("next")
 			}
 		};
-		e.prettyPhoto.stopSlideshow = function() {
-			$pp_pic_holder.find(".pp_pause").unbind("click").removeClass("pp_pause").addClass("pp_play").click(function() {
+		e.prettyPhoto.stopSlideshow = function () {
+			$pp_pic_holder.find(".pp_pause").unbind("click").removeClass("pp_pause").addClass("pp_play").click(function () {
 				e.prettyPhoto.startSlideshow();
 				return false
 			});
 			clearInterval(m);
 			m = undefined
 		};
-		e.prettyPhoto.close = function() {
+		e.prettyPhoto.close = function () {
 			$("body").off();
 			if ($pp_overlay.is(":animated"))
 				return;
 			e.prettyPhoto.stopSlideshow();
 			$pp_pic_holder.stop().find("object,embed").css("visibility", "hidden");
-			e("div.pp_pic_holder,div.ppt,.pp_fade").fadeOut(settings.animation_speed, function() {
+			e("div.pp_pic_holder,div.ppt,.pp_fade").fadeOut(settings.animation_speed, function () {
 				e(this).remove()
 			});
-			$pp_overlay.fadeOut(settings.animation_speed, function() {
+			$pp_overlay.fadeOut(settings.animation_speed, function () {
 				if (settings.hideflash)
 					e("object,embed,iframe[src*=youtube],iframe[src*=vimeo]").css("visibility", "visible");
 				e(this).remove();
@@ -579,7 +579,7 @@ $(function() {
 			hashRel = hashIndex;
 			hashIndex = hashIndex.substring(hashIndex.indexOf("/") + 1, hashIndex.length - 1);
 			hashRel = hashRel.substring(0, hashRel.indexOf("/"));
-			setTimeout(function() {
+			setTimeout(function () {
 				e("a[" + s.hook + "^='" + hashRel + "']:eq(" + hashIndex + ")").trigger("click")
 			}, 50)
 		}

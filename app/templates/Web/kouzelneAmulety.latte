@@ -21,15 +21,4 @@
 	náušnice, medicínská zvířátka, andílky, růžence a lapače snů a výrobky z jelenice a vepřovice – mošničky a váčky.
 	Bubny, obrazy a keramiku na zakázku nevyrábím.
 </p>
-{foreach $amulets as $amulet}
-	<h2>{$amulet['name']}</h2>
-	{ifset $amulet['dir']}
-		{var $images = $presenter->getImages($amulet['dir'])}
-		<div class="gallery">
-			<a n:foreach="$images as $image" href="{$image['path']}" rel="g[{$amulet['dir']}]">
-				<img src="{$image['path']}" alt="{$image['title']}"{ifset $image['title']} title="{$image['title']}"{/ifset} />
-			</a>
-		</div>
-		<div class="clr"></div>
-	{/ifset}
-{/foreach}
+{include gallery}
