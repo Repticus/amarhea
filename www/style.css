@@ -79,7 +79,7 @@ a {
 }
 #menu li:nth-child(1) {
   top: 30px;
-  left: 76px;
+  left: 80px;
 }
 #menu li:nth-child(1) a.active,
 #menu li:nth-child(1) a:hover {
@@ -88,7 +88,7 @@ a {
 }
 #menu li:nth-child(2) {
   top: 30px;
-  left: 314px;
+  left: 350px;
 }
 #menu li:nth-child(2) a.active,
 #menu li:nth-child(2) a:hover {
@@ -101,7 +101,7 @@ a {
 }
 #menu li:nth-child(4) {
   top: 85px;
-  left: 265px;
+  left: 250px;
 }
 #menu li:nth-child(4) a.active,
 #menu li:nth-child(4) a:hover {
@@ -110,7 +110,7 @@ a {
 }
 #menu li:nth-child(5) {
   top: 85px;
-  left: 364px;
+  left: 390px;
 }
 #menu li:nth-child(6) {
   top: 140px;
@@ -123,11 +123,11 @@ a {
 }
 #menu li:nth-child(7) {
   top: 140px;
-  left: 235px;
+  left: 182px;
 }
 #menu li:nth-child(8) {
   top: 140px;
-  left: 460px;
+  left: 484px;
 }
 #menu li:nth-child(8) a.active,
 #menu li:nth-child(8) a:hover {
