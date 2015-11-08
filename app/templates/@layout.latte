@@ -27,11 +27,17 @@
 				{block content|indent:2}
 				{/block}
 			</div>
+			<a class="toplist" n:if="$toplist" href="http://www.toplist.cz/stat/1707344" target="_blank">
+				<script language="JavaScript" type="text/javascript">
+					document.write('<img src="https://toplist.cz/count.asp?id=1707344&logo=mc&http=' + escape(document.referrer) + '&t=' + escape(document.title) + '&wi=' + escape(window.screen.width) + '&he=' + escape(window.screen.height) + '&cd=' + escape(window.screen.colorDepth) + '" width="88" height="60" border=0 alt="TOPlist" />');
+				</script>
+				<noscript>
+				<img src="https://toplist.cz/count.asp?id=1707344&logo=mc" border="0" alt="TOPlist" width="88" height="60" />
+				</noscript>
+			</a>
 		</div>
 		<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 		<script src="{$basePath}/javascript.js"></script>
-		{block scripts}{/block}
-		{*		<script src="//nette.github.io/resources/js/netteForms.min.js"></script>*}
 	</body>
 </html>
 

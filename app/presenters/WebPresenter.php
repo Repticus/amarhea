@@ -7,8 +7,8 @@ use Nette,
 
 class WebPresenter extends Nette\Application\UI\Presenter {
 
-	public function renderDefault() {
-
+	public function beforeRender() {
+		$this->template->toplist = $this->context->parameters['toplist'];
 	}
 
 	public function actionKouzelneAmulety() {

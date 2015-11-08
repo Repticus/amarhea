@@ -50,6 +50,11 @@ a{
 		url('img/topgrad.jpg') top repeat-x
 		$bodyColor;
 }
+.toplist{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
 .floatleft{
 	float: left;
 	margin-right: 5px;

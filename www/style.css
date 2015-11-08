@@ -43,6 +43,12 @@ a {
   background: url("img/head.jpg") top no-repeat, url("img/foot.jpg") bottom no-repeat, url("img/body.jpg") center 585px repeat-y, url("img/btmgrad.jpg") bottom repeat-x, url("img/topgrad.jpg") top repeat-x #e3cf9a;
 }
 
+.toplist {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
 .floatleft {
   float: left;
   margin-right: 5px;
