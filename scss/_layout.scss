@@ -21,6 +21,10 @@ body{
 	color: $fontColor;
 	background-color: $backColor;
 	font-family: 'Exo 2';
+	background:
+		url('img/topgrad.jpg') top repeat-x,
+		url('img/btmgrad.jpg') bottom repeat-x
+		$bodyColor;
 }
 h1, h2{
 	padding-left: 60px;
@@ -35,20 +39,27 @@ p{
 a{
 	color: $linkColor;
 }
-#content{
-	width: 520px;
-	margin: 220px auto;
-	padding-bottom: 390px;
-}
 #page{
+	width: 1280px;
 	min-height: 1192px;
+	margin: auto;
+	position: relative;
 	background:
 		url('img/head.jpg') top no-repeat,
 		url('img/foot.jpg') bottom no-repeat,
 		url('img/body.jpg') center 585px repeat-y,
-		url('img/btmgrad.jpg') bottom repeat-x,
-		url('img/topgrad.jpg') top repeat-x
 		$bodyColor;
+}
+#content{
+	width: 520px;
+	margin: 0 0 0 390px;
+	padding-bottom: 360px;
+}
+#gem{
+	position: absolute;
+	top: 161px;
+	left: 249px;
+	display: none;
 }
 .toplist{
 	position: absolute;

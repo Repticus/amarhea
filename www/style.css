@@ -14,6 +14,7 @@ body {
   color: #46562c;
   background-color: #cfad53;
   font-family: 'Exo 2';
+  background: url("img/topgrad.jpg") top repeat-x, url("img/btmgrad.jpg") bottom repeat-x #e3cf9a;
 }
 
 h1, h2 {
@@ -32,15 +33,25 @@ a {
   color: #3b5bd0;
 }
 
-#content {
-  width: 520px;
-  margin: 220px auto;
-  padding-bottom: 390px;
+#page {
+  width: 1280px;
+  min-height: 1192px;
+  margin: auto;
+  position: relative;
+  background: url("img/head.jpg") top no-repeat, url("img/foot.jpg") bottom no-repeat, url("img/body.jpg") center 585px repeat-y, #e3cf9a;
 }
 
-#page {
-  min-height: 1192px;
-  background: url("img/head.jpg") top no-repeat, url("img/foot.jpg") bottom no-repeat, url("img/body.jpg") center 585px repeat-y, url("img/btmgrad.jpg") bottom repeat-x, url("img/topgrad.jpg") top repeat-x #e3cf9a;
+#content {
+  width: 520px;
+  margin: 0 0 0 390px;
+  padding-bottom: 360px;
+}
+
+#gem {
+  position: absolute;
+  top: 161px;
+  left: 249px;
+  display: none;
 }
 
 .toplist {
@@ -59,8 +70,8 @@ a {
 }
 
 #menu {
-  width: 600px;
-  margin: 0 auto;
+  height: 210px;
+  margin: 0 0 0 350px;
   padding: 0;
   list-style: none;
   position: relative;
