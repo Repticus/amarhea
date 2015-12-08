@@ -55,11 +55,21 @@ a{
 	margin: 0 0 0 390px;
 	padding-bottom: 360px;
 }
-#gem{
+#gem, #light1, #light2{
 	position: absolute;
+	display: none;
+}
+#gem{
 	top: 161px;
 	left: 249px;
-	display: none;
+}
+#light1{
+	top: 30px;
+	left: 132px;
+}
+#light2{
+	top: 374px;
+	left: 202px;
 }
 .toplist{
 	position: absolute;

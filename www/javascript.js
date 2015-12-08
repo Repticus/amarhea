@@ -13,7 +13,15 @@ $(function () {
 				  .fadeToggle(600)
 				  .fadeToggle(300)
 				  .fadeToggle(2000, function () {
-					  setTimeout(showGem, 1000);
+					  $("#light1")
+								 .fadeToggle(500)
+								 .fadeToggle(2000, function () {
+									 $("#light2")
+												.fadeToggle(500)
+												.fadeToggle(2000, function () {
+													showGem();
+												});
+								 });
 				  });
 	}
 
