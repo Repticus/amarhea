@@ -13,14 +13,13 @@
 		<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
 		<div id="page">
 			<ul id="menu">
-				<li><a n:class="$presenter->isLinkCurrent('tanecniKurzy') ? active" n:href="Web:tanecniKurzy">Kurz tance a her</a></li>
+				<li><a n:class="$presenter->isLinkCurrent('rodinneKonstelace') ? active" n:href="Web:rodinneKonstelace">Rodinné konstelace</a></li>
+				<li><a n:class="$presenter->isLinkCurrent('poradenstviTerapie') ? active" n:href="Web:poradenstviTerapie">Poradenství-Terapie</a></li>
+				<li><a n:class="$presenter->isLinkCurrent('kurzAstrologie') ? active" n:href="Web:kurzAstrologie">Kurz Astrologie</a></li>
 				<li><a n:class="$presenter->isLinkCurrent('kouzelneAmulety') ? active" n:href="Web:kouzelneAmulety">Kouzelné amulety</a></li>
-				<li><a n:class="$presenter->isLinkCurrent('prostorProDusi') ? active" n:href="Web:prostorProDusi">Prostor pro duši</a></li>
-				<li><a n:class="$presenter->isLinkCurrent('amarhea') ? active" n:href="Web:amarhea">Amarhea</a></li>
-				<li><a n:class="$presenter->isLinkCurrent('hvezdyVypravi') ? active" n:href="Web:hvezdyVypravi">Hvězdy vypráví</a></li>
 				<li><a n:class="$presenter->isLinkCurrent('kontakt') ? active" n:href="Web:kontakt">Kontakt</a></li>
-				<li><a n:class="$presenter->isLinkCurrent('kurzyAstroKonstelace') ? active" n:href="Web:kurzyAstroKonstelace">Kurz Astro-konstelací</a></li>
-				<li><a n:class="$presenter->isLinkCurrent('galerie') ? active" n:href="Web:galerie">Galerie</a></li>
+				<li><a n:class="$presenter->isLinkCurrent('amarhea') ? active" n:href="Web:amarhea">O mně</a></li>
+				<li><a n:class="$presenter->isLinkCurrent('galerie') ? active" n:href="Web:galerie">Taneční galerie</a></li>
 			</ul>
 			<div id="content">
 				{block content|indent:2}

@@ -1,3 +1,8 @@
+$menuColor: #088e3b;
+$menuColorShadow: #006026;
+$menuColorActive: #bf272b;
+$menuColorActiveShadow: #890006;
+
 #menu{
 	height: 210px;
 	margin: 0 0 0 350px;
@@ -6,77 +11,45 @@
 	position: relative;
 	font-family: allura;
 	font-size: 2em;
-	text-shadow: 0 0 3px #404b2e;
 	li{
 		position: absolute;
 	}
 	a{
-		color: #6f309f;
-		text-shadow: 0 0 3px #3d105f;
 		text-decoration: none;
+		color: $menuColor;
+		text-shadow: 0 0 2px $menuColorShadow;
 	}
 	a.active,
 	a:hover{
-		color: #c00000;
-		color: #ed1b1b;
-		color: #bf272b;
-		text-shadow: 0 0 2px #900000;
+		color: $menuColorActive;
+		text-shadow: 0 0 2px $menuColorActiveShadow;
 	}
 	li:nth-child(1){
 		top: 30px;
 		left: 80px;
-		a.active,
-		a:hover{
-			color: #088e3b;
-			text-shadow: 0 0 2px #006316;
-		}
 	}
 	li:nth-child(2){
 		top: 30px;
 		left: 350px;
-		a.active,
-		a:hover{
-			color: #088e3b;
-			text-shadow: 0 0 2px #006316;
-		}
 	}
 	li:nth-child(3){
 		top: 85px;
-		left: 60px;
+		left: 70px;
 	}
 	li:nth-child(4){
 		top: 85px;
-		left: 250px;
-		a.active,
-		a:hover{
-			color: #088e3b;
-			text-shadow: 0 0 2px #006316;
-		}
+		left: 380px;
 	}
 	li:nth-child(5){
-		top: 85px;
-		left: 390px;
+		top: 140px;
+		left: 50px;
 	}
 	li:nth-child(6){
 		top: 140px;
-		left: 50px;
-		a.active,
-		a:hover{
-			color: #088e3b;
-			text-shadow: 0 0 2px #006316;
-		}
+		left: 260px;
 	}
 	li:nth-child(7){
 		top: 140px;
-		left: 182px;
-	}
-	li:nth-child(8){
-		top: 140px;
-		left: 484px;
-		a.active,
-		a:hover{
-			color: #088e3b;
-			text-shadow: 0 0 2px #006316;
-		}
+		left: 420px;
 	}
 }

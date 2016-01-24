@@ -90,79 +90,47 @@ a {
   position: relative;
   font-family: allura;
   font-size: 2em;
-  text-shadow: 0 0 3px #404b2e;
 }
 #menu li {
   position: absolute;
 }
 #menu a {
-  color: #6f309f;
-  text-shadow: 0 0 3px #3d105f;
   text-decoration: none;
+  color: #088e3b;
+  text-shadow: 0 0 2px #006026;
 }
 #menu a.active,
 #menu a:hover {
-  color: #c00000;
-  color: #ed1b1b;
   color: #bf272b;
-  text-shadow: 0 0 2px #900000;
+  text-shadow: 0 0 2px #890006;
 }
 #menu li:nth-child(1) {
   top: 30px;
   left: 80px;
 }
-#menu li:nth-child(1) a.active,
-#menu li:nth-child(1) a:hover {
-  color: #088e3b;
-  text-shadow: 0 0 2px #006316;
-}
 #menu li:nth-child(2) {
   top: 30px;
   left: 350px;
 }
-#menu li:nth-child(2) a.active,
-#menu li:nth-child(2) a:hover {
-  color: #088e3b;
-  text-shadow: 0 0 2px #006316;
-}
 #menu li:nth-child(3) {
   top: 85px;
-  left: 60px;
+  left: 70px;
 }
 #menu li:nth-child(4) {
   top: 85px;
-  left: 250px;
-}
-#menu li:nth-child(4) a.active,
-#menu li:nth-child(4) a:hover {
-  color: #088e3b;
-  text-shadow: 0 0 2px #006316;
+  left: 380px;
 }
 #menu li:nth-child(5) {
-  top: 85px;
-  left: 390px;
-}
-#menu li:nth-child(6) {
   top: 140px;
   left: 50px;
 }
-#menu li:nth-child(6) a.active,
-#menu li:nth-child(6) a:hover {
-  color: #088e3b;
-  text-shadow: 0 0 2px #006316;
+#menu li:nth-child(6) {
+  top: 140px;
+  left: 260px;
 }
 #menu li:nth-child(7) {
   top: 140px;
-  left: 182px;
-}
-#menu li:nth-child(8) {
-  top: 140px;
-  left: 484px;
-}
-#menu li:nth-child(8) a.active,
-#menu li:nth-child(8) a:hover {
-  color: #088e3b;
-  text-shadow: 0 0 2px #006316;
+  left: 420px;
 }
 
 #contact {
@@ -195,6 +163,11 @@ a {
 
 .phone:before {
   content: '\f0e8';
+  top: 1px;
+}
+
+.city:before {
+  content: '\f576';
   top: 1px;
 }
 
