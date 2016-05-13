@@ -14,9 +14,9 @@
 		<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
 		<div id="page">
 			<ul id="menu">
+				<li><a n:class="$presenter->isLinkCurrent('energieKranioterapie') ? active" n:href="Web:energieKranioterapie">Energie-kranioterapie</a></li>
+				<li><a n:class="$presenter->isLinkCurrent('astroPoradenstvi') ? active" n:href="Web:astroPoradenstvi">Astro-poradenství</a></li>
 				<li><a n:class="$presenter->isLinkCurrent('rodinneKonstelace') ? active" n:href="Web:rodinneKonstelace">Rodinné konstelace</a></li>
-				<li><a n:class="$presenter->isLinkCurrent('poradenstviTerapie') ? active" n:href="Web:poradenstviTerapie">Poradenství-Terapie</a></li>
-				<li><a n:class="$presenter->isLinkCurrent('kurzAstrologie') ? active" n:href="Web:kurzAstrologie">Kurz Astrologie</a></li>
 				<li><a n:class="$presenter->isLinkCurrent('kouzelneAmulety') ? active" n:href="Web:kouzelneAmulety">Kouzelné amulety</a></li>
 				<li><a n:class="$presenter->isLinkCurrent('kontakt') ? active" n:href="Web:kontakt">Kontakt</a></li>
 				<li><a n:class="$presenter->isLinkCurrent('amarhea') ? active" n:href="Web:amarhea">O mně</a></li>
