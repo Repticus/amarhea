@@ -11,11 +11,6 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$this->template->toplist = $this->context->parameters['toplist'];
 	}
 
-	public function actionKouzelneAmulety() {
-		$this->template->gallery = $this->context->parameters['amulets'];
-		$this->template->dir = 'amulety';
-	}
-
 	public function actionGalerie() {
 		$this->template->gallery = $this->context->parameters['galerie'];
 		$this->template->dir = 'fotogalerie';
